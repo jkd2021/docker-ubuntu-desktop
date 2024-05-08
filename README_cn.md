@@ -55,15 +55,7 @@ docker pull gezp/ubuntu-desktop:20.04-cu11.0.3
 docker run: 创建并运行容器
 ```bash
 # 支持ssh和 3D GUI
-docker run -d --restart=on-failure \
-    --name my_workspace \
-    --cap-add=SYS_PTRACE \
-    --gpus all  \
-    --shm-size=1024m \
-    -e SIZE=1920x1080 \
-    -p 10022:22  \
-    -p 14000:4000  \
-    gezp/ubuntu-desktop:20.04-cu11.0.3
+docker run -d --restart=on-failure --name ubuntu2204 --cap-add=SYS_PTRACE --gpus all --shm-size=2048m -p 10022:22 -p 14000:4000 gezp/ubuntu-desktop:22.04-cu12.1.1
 ```
 * 默认用户名和密码均为ubuntu
 
