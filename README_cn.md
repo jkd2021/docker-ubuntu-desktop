@@ -60,6 +60,7 @@ docker run -d --restart=on-failure \
     --cap-add=SYS_PTRACE \
     --gpus all  \
     --shm-size=1024m \
+    -e SIZE=1920x1080 \
     -p 10022:22  \
     -p 14000:4000  \
     gezp/ubuntu-desktop:20.04-cu11.0.3
