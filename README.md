@@ -1,4 +1,4 @@
-
+<docker run -d --restart=on-failure --name ubuntu2204 --cap-add=SYS_PTRACE --gpus all --shm-size=2048m -p 10022:22 -p 14000:4000 gezp/ubuntu-desktop:22.04-cu12.1.1>
 
 # Ubuntu Desktop based on Docker
 
